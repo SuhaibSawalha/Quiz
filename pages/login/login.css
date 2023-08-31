@@ -1,0 +1,82 @@
+#login {
+  width: 700px;
+  height: 400px;
+  position: absolute;
+  top: calc(50% + 30px);
+  left: calc(50% + 100px);
+  transform: translate(-50%, -50%);
+  border: 1px solid #234acd;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+@media (max-width: 1000px) {
+  #login {
+    left: 50%;
+    width: 500px;
+  }
+}
+
+input {
+  margin-top: 20px !important;
+  border: 1px solid black;
+  padding: 10px;
+  width: 300px;
+}
+
+label {
+  font-size: 1.2rem;
+  width: 100px;
+}
+
+#showPassword {
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 550px) {
+  input {
+    width: 250px;
+    margin-top: 10px !important;
+  }
+  #login {
+    width: 350px;
+  }
+  label {
+    font-size: 1rem;
+  }
+  #login > p {
+    margin-bottom: 5px !important;
+  }
+  #login > .btn {
+    margin-top: 10px;
+  }
+  #account {
+    margin-top: 10px !important;
+  }
+  label:nth-child(5) {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 370px) {
+  input {
+    width: 180px;
+    margin-top: 10px !important;
+  }
+  #login {
+    width: 250px;
+    padding-right: 0;
+  }
+  label {
+    font-size: 1rem;
+  }
+  #login > p {
+    margin-bottom: 5px !important;
+    font-size: 0.8rem;
+  }
+  label:nth-child(5) {
+    margin-top: 10px;
+  }
+}

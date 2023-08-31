@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="icon" type="image/x-icon" href="./../../img/Q.png" />
+    <link rel="stylesheet" href="./info.css" />
+    <link rel="stylesheet" href="./../../style.css" />
+    <link rel="stylesheet" href="./../../Bootstrap/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header>
+      <button style="border: none; background: none" onclick="gotoHome()">
+        <img src="./../../img/Q.png" alt="Quiz" title="Quiz" />
+        <p>Quiz</p>
+      </button>
+      <div id="registration"></div>
+    </header>
+    <nav>
+      <div>
+        <i id="close-nav" onclick="HideNavBar()" class="bi bi-x-lg"></i>
+        <button onclick="gotoHome()">
+          <i class="bi bi-house-door"></i>
+          <p>Home</p>
+        </button>
+        <button onclick="gotoProfile()">
+          <i class="bi bi-person-circle"></i>
+          <p>Profile</p>
+        </button>
+        <button onclick="gotoMyQuizzes()">
+          <i class="bi bi-file-earmark-person"></i>
+          <p>My Quizzes</p>
+        </button>
+        <button onclick="gotoAllQuizzes()">
+          <i class="bi bi-file-earmark"></i>
+          <p>All Quizzes</p>
+        </button>
+      </div>
+      <button onclick="gotoInfo()" style="color: orange">
+        <i class="bi bi-info-circle"></i>
+        <p>info</p>
+      </button>
+    </nav>
+    <h1>This website was made by Suhaib Sawalha because he was bored</h1>
+    <div id="toggle" onclick="ShowNavBar()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="focus"></div>
+  </body>
+  <script src="./../../Bootstrap/main.js"></script>
+  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+  <script src="./../../main.js"></script>
+</html>

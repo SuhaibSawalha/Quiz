@@ -1,0 +1,130 @@
+#profile {
+  width: calc(100% - 200px);
+  height: calc(100vh - 60px);
+  position: absolute;
+  left: 200px;
+  top: 60px;
+}
+
+#profile > div:first-child {
+  display: flex;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 700px;
+  position: absolute;
+}
+
+#profile > div > div:first-child {
+  border: 1px solid black;
+  width: 320px;
+  padding: 10px;
+}
+
+#profile > div > div:nth-child(2) {
+  padding-left: 50px;
+}
+
+#profile > div > div > div > div > p:first-child,
+#profile > div > div > div > div > p:nth-child(3) {
+  color: blue;
+}
+
+#profile > div > div > div > div > p:first-child:hover,
+#profile > div > div > div > div > p:nth-child(3):hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#profile img {
+  margin-bottom: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1000px) {
+  #profile {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  #profile {
+    top: 0;
+  }
+  #profile > div:first-child {
+    width: 100%;
+  }
+  #profile > div:first-child {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+  #profile > div > div:nth-child(2) {
+    margin-top: 10px;
+    padding-left: 0;
+  }
+  #information {
+    width: 320px;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 350px) {
+  #profile > div > div:first-child {
+    width: 250px;
+  }
+  #profile > div > div > div > div {
+    padding: 0 40px !important;
+  }
+  #information {
+    width: 250px;
+  }
+}
+
+#change-unset {
+  display: flex;
+}
+
+#upload {
+  display: none;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  animation-name: slight;
+  animation-duration: 0.5s;
+}
+
+input {
+  width: 200px;
+  font-size: 0.8rem !important;
+  display: none;
+  margin-top: 10px !important;
+  animation-name: slight;
+  animation-duration: 0.5s;
+}
+
+@keyframes slight {
+  0% {
+    transform: translate(0, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+#information p span {
+  text-decoration: underline;
+}
+
+#information p span:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
